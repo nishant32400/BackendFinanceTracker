@@ -1,0 +1,16 @@
+# Node modules and log files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment variables
+.env
+
+# Ignore SQLite DB files (if any)
+*.sqlite
+*.db
+
+# Ignore IDE settings and system files
+.vscode/
+.DS_Store
