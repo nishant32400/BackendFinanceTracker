@@ -7,7 +7,11 @@ const budgetRoutes = require('./routes/budgets');
 const adminRoutes = require('./routes/admin');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://frontend-finance-tracker-git-master-nishants-projects-3489f8e5.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
